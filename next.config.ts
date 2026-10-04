@@ -9,6 +9,17 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/newprojects/:path*',
+          destination: '/api/images/path/:path*',
+        },
+      ],
+    };
+  },
 };
 
 export default nextConfig;

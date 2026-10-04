@@ -32,3 +32,6 @@ yarn-error.log*
 .vercel
 
 *.tsbuildinfo
+
+# MongoDB migrated images
+/public/newprojects/
